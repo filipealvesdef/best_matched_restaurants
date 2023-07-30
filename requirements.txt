@@ -1,0 +1,5 @@
+ariadne
+dependency_injector
+python-dotenv
+flask
+SQLAlchemy
