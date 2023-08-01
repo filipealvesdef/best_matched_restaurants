@@ -3,7 +3,7 @@
 ## Introduction
 This project features the web application server of a search system that filters and ranks the best matched restaurants based on its name, distance, price, customer ratings or cuisine type.
 
-The code of this application was written in **python**; it has a **relational database** to store and query data in **.csv** files and exposes a **GraphQL API** for seamless interaction.
+The code of this application was written in **python**; it features a **relational database** to store and query data in **.csv** files; ORM to abstract database methods and facilitate data-model mapping; exposes a **GraphQL API** which can be accessed through a **web application playground**.
 
 ## Search
 The search results are composed by the **top 5** restaurants, filtered by search parameters and ranked according to their attributes to determine the best matches, as described bellow.
