@@ -3,7 +3,7 @@
 ## Introduction
 This project features the web application server of a search system that filters and ranks the best matched restaurants based on its name, distance, price, customer ratings or cuisine type.
 
-The code of this application was written in **python**; it features a **relational database** to store and query data in **.csv** files; ORM to abstract database methods and facilitate data-model mapping; exposes a **GraphQL API** which can be accessed through a **web application playground**.
+The code of this application was written in **python**; it features a **relational database** to store and query data in **.csv** files; **ORM** to abstract database methods and facilitate data-model mapping; exposes a **GraphQL API** which can be accessed through a **web application playground**. 
 
 ## Search
 The search results are composed by the **top 5** restaurants, filtered by search parameters and ranked according to their attributes to determine the best matches, as described bellow.
@@ -115,6 +115,58 @@ Sample Result:
 ```
 
 The response will contain a list of restaurants that match the search criteria, sorted as described in the [Rank](#rank) section. Notice how the results were sorted in this example: "Kitchenish" is the top-1 result because it has the lower `distance` among the results. "Safety Kitchen" and "Festive Grill" tie in `distance` and `customer_rating` as well, but "Safety Kitchen" wins, since it has a lower price than "Festive Grill".
+
+## Running Python Tests
+The project has **13 test cases** to validate best match results and error handling. 
+
+### Prerequisites
+- Python 3.x installed on your system.
+
+### Steps to Run Tests
+1. **Create a Virtual Environment**:
+
+   It is recommended to use a virtual environment to isolate the test environment from the system-wide Python packages. Open your terminal or command prompt and run the following command to create a virtual environment named `venv`:
+
+   ```bash
+   python -m venv venv
+   ```
+
+2. **Activate the Virtual Environment**:
+   Activate the virtual environment to use the Python interpreter and packages installed within it. The activation command varies depending on your operating system:
+
+   On Windows:
+   ```bash
+   venv\Scripts\activate
+   ```
+
+   On macOS and Linux:
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. **Install Dependencies**:
+   Install these dependencies using the following command:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run Tests**:
+   In project root, run:
+
+   ```bash
+   python -m unittest tests
+   ```
+
+   The test runner will automatically and execute all test cases in the `tests/` directory. The output should be:
+
+   ```
+   .............
+   ----------------------------------------------------------------------
+   Ran 13 tests in 0.009s
+
+   OK
+   ```
 
 ## Technical details
 ### Architecture
