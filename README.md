@@ -9,7 +9,7 @@ The code of this application was written in **python**; it features a **relation
 The search results are composed by the **top 5** restaurants, filtered by search parameters and ranked according to their attributes to determine the best matches, as described bellow.
 
 ### Filter
-Fist the results are filtered by the **union (and relationship)** of **optional** filter parameters:
+First the results are filtered by the **union (and relationship)** of **optional** filter parameters:
 
 - **Restaurant Name:** The name of the filtered restaurants should match either completely or partially with the search parameter.
 
