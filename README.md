@@ -125,7 +125,7 @@ The project has **13 test cases** to validate best match results and error handl
 ### Steps to Run Tests
 1. **Create a Virtual Environment**:
 
-   It is recommended to use a virtual environment to isolate the test environment from the system-wide Python packages. Open your terminal or command prompt and run the following command to create a virtual environment named `venv`:
+   It is recommended to use a virtual environment to isolate the test environment from the system-wide Python packages. Open your terminal or command prompt, change the work directory to the project root and run the following command to create a virtual environment named `venv`:
 
    ```bash
    python -m venv venv
@@ -158,7 +158,7 @@ The project has **13 test cases** to validate best match results and error handl
    python -m unittest tests
    ```
 
-   The test runner will automatically and execute all test cases in the `tests/` directory. The output should be:
+   The test runner will automatically execute all test cases in the `tests/` directory. The output should be:
 
    ```
    .............
